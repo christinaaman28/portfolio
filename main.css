@@ -1,0 +1,449 @@
+/*font stuff*/
+@font-face {
+  font-family: 'Satoshi-Light';
+  src: url('fonts/Satoshi-Light.woff2') format('woff2'),
+       url('fonts/Satoshi-Light.woff') format('woff'),
+       url('fonts/Satoshi-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-LightItalic';
+  src: url('fonts/Satoshi-LightItalic.woff2') format('woff2'),
+       url('fonts/Satoshi-LightItalic.woff') format('woff'),
+       url('fonts/Satoshi-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('fonts/Satoshi-Regular.woff') format('woff'),
+       url('fonts/Satoshi-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-Italic';
+  src: url('fonts/Satoshi-Italic.woff2') format('woff2'),
+       url('fonts/Satoshi-Italic.woff') format('woff'),
+       url('fonts/Satoshi-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Medium';
+  src: url('fonts/Satoshi-Medium.woff2') format('woff2'),
+       url('fonts/Satoshi-Medium.woff') format('woff'),
+       url('fonts/Satoshi-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-MediumItalic';
+  src: url('fonts/Satoshi-MediumItalic.woff2') format('woff2'),
+       url('fonts/Satoshi-MediumItalic.woff') format('woff'),
+       url('fonts/Satoshi-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('fonts/Satoshi-Bold.woff') format('woff'),
+       url('fonts/Satoshi-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-BoldItalic';
+  src: url('fonts/Satoshi-BoldItalic.woff2') format('woff2'),
+       url('fonts/Satoshi-BoldItalic.woff') format('woff'),
+       url('fonts/Satoshi-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('fonts/Satoshi-Black.woff2') format('woff2'),
+       url('fonts/Satoshi-Black.woff') format('woff'),
+       url('fonts/Satoshi-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-BlackItalic';
+  src: url('fonts/Satoshi-BlackItalic.woff2') format('woff2'),
+       url('fonts/Satoshi-BlackItalic.woff') format('woff'),
+       url('fonts/Satoshi-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 900.0;
+*
+* available axes:
+'wght' (range from 300.0 to 900.0
+*/
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('fonts/Satoshi-Variable.woff2') format('woff2'),
+       url('fonts/Satoshi-Variable.woff') format('woff'),
+       url('fonts/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 900.0;
+*
+* available axes:
+'wght' (range from 300.0 to 900.0
+*/
+@font-face {
+  font-family: 'Satoshi-VariableItalic';
+  src: url('../fonts/Satoshi-VariableItalic.woff2') format('woff2'),
+       url('../fonts/Satoshi-VariableItalic.woff') format('woff'),
+       url('../fonts/Satoshi-VariableItalic.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #F2F1F0;
+    font-family: 'Satoshi-Regular', Helvetica, sans-serif;
+}
+
+h1 {
+     font-family: 'Satoshi-Black';
+}
+
+h2 {
+     font-family: 'Satoshi-Bold';
+}
+/*nav stuff*/
+
+.navbar {
+    background:#F2F1F0;
+}
+.nav-link,
+.navbar-brand {
+    color: #262626;
+    cursor: pointer;
+}
+navbar-brand.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 5px;
+    padding: 10px;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #A44113;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+     padding: .5rem  2rem;
+}
+
+
+/*description blurb */
+.description, .work {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+    font-family: 'Satoshi-Variable', Helvetica, sans-serif;
+
+}
+.description h1, .work h2 {
+    font-size: 2.5rem;
+    font-family: 'Satoshi-Variable', Helvetica, sans-serif;
+
+}
+.description p, .work p {
+
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+.description a {
+    border:1px solid #A44113;
+    background:#A44113;
+    color:#fff;
+}
+.description a:hover {
+	border:1px solid #fff;
+    background:#262626;
+    color:#FFF;
+}
+
+.header {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+/*work section*/
+
+
+.features {
+	margin: auto;
+	padding: 4em;
+	position: relative;
+}
+.feature-title {
+ font-family: 'Satoshi-Bold';
+	color: #A44113;
+	font-size: 1.3rem;
+	font-weight: 459;
+	margin-bottom: 20px;
+}
+
+.features a {
+    color: #A44113;
+}
+
+.features a:hover {
+    color: #A44113;
+
+}
+.features img {
+	margin-bottom: 16px;
+}
+
+.hover-zoom {
+  display: block;
+  transition: transform .2s;
+}
+
+.hover-zoom:hover {
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.hover-zoom:hover .feature-title {
+  color: #A44113 !important;
+}
+
+
+/*contact form section*/
+
+
+.features .form-control,
+.features input {
+	border-radius: .5rem;
+     padding: 10px;
+}
+
+
+/* modal close */
+#myModal .close {
+    background: #c0c3c8;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 19px;
+    font-weight: normal;
+    height: 30px;
+    opacity: 0.5;
+    padding: 0;
+    position: absolute;
+    right: 26px;
+    text-align: center;
+    top: 26px;
+    width: 30px;
+
+}
+
+#myModal .close:hover,
+#myModal .close:focus {
+  color: #A44113;
+  text-decoration: none;
+
+}
+
+.form-group {
+  position: relative;
+  padding: .3rem;
+
+}
+
+.submit .btn btn-secondary btn-block {
+     border:1px solid #A44113;
+    background:#A44113;
+    color:#fff
+}
+
+.submit .btn btn-secondary btn-block a:hover {
+	border:1px solid #fff;
+    background:#262626;
+    color:#FFF;
+}
+
+/*staff section*/
+
+.background {
+	background: #dedec8;
+	padding: 4em 0;
+}
+.team {
+	color: #5e5e55;
+	padding: 0 180px;
+
+}
+.team .card-columns {
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4;
+
+}
+.team .card {
+	background:none;
+	border: none;
+}
+.team .card-title {
+	font-size: 1.5rem;
+	margin-bottom: 0;
+	text-transform: uppercase;
+    flex-wrap: nowrap;
+}
+
+
+
+/* footer */
+.page-footer {
+    background-color: #262626;
+    padding: 20px 0 30px;
+}
+.footer-copyright {
+    color: #666;
+
+}
+
+
+/* project pages */
+* Project page styling */
+.project-styling {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.project-name,
+.project-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.project-name h2 {
+    font-size: 3rem;
+    font-family: 'Satoshi-Bold', Helvetica, sans-serif;
+    color: #262626;
+    margin-bottom: 10px;
+}
+
+.project-title h4 {
+    font-size: 1.5rem;
+    font-family: 'Satoshi-Light', Helvetica, sans-serif;
+    margin-top: 0;
+}
+
+.project-writing {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+.project-writing h3 {
+    font-size: 1.8rem;
+    font-family: 'Satoshi-Medium', Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.project-writing p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #262626;
+    margin-bottom: 25px;
+}
+
+
+
+/* media */
+
+
+@media (max-width: 1188px) {
+     .background {
+	padding: 2em 0;
+}
+.team {
+	padding: 0 160px;
+
+}
+.team .card-columns {
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4;
+
+}
+.team .card-title {
+	font-size: 1.05rem;
+	margin-bottom: 0;
+	text-transform: uppercase;
+    flex-wrap: nowrap;
+}
+
+
+}
+
+
+
+
+@media (max-width: 575.98px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+
+    .description h1 {
+        font-size: 2em;
+    }
+
+    .description p {
+        font-size: 1.2rem;
+    }
+
+    .features {
+        margin: 0;
+    }
+}
