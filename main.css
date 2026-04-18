@@ -165,6 +165,10 @@ h2 {
   width: auto;
 }
 
+.navbar-toggler {
+    border: none;
+}
+
 .nav-link {
     margin-right: 1rem !important;
 }
