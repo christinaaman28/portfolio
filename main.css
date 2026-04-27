@@ -411,6 +411,20 @@ h2 {
     margin-bottom: 25px;
 }
 
+/*gallery page */
+.gallery-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #262626;
+    margin-bottom: 25px;
+}
+.gallery-intro h2 {
+    font-size: 3rem;
+    font-family: 'Satoshi-Bold', Helvetica, sans-serif;
+    color: #262626;
+    margin-bottom: 10px;
+}
+
 
 
 /* media */
