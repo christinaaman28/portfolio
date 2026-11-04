@@ -188,18 +188,12 @@ h2 {
 
 
 /*description blurb */
-.work {
+
+.description, .work {
 	left: 50%;
 	position: absolute;
 	top: 45%;
 	transform: translate(-50%, -55%);
-    font-family: 'Satoshi-Variable', Helvetica, sans-serif;
-
-}
-
-.description {
-    width: min(100%, 1100px);
-    margin: 0 auto;
     font-family: 'Satoshi-Variable', Helvetica, sans-serif;
 }
 
@@ -511,7 +505,7 @@ h2 {
   }
 
     .description h1 {
-        font-size: 2.2em;
+        font-size: 2.2rem;
     }
 
     .description p {
