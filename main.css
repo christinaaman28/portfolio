@@ -197,11 +197,20 @@ h2 {
     font-family: 'Satoshi-Variable', Helvetica, sans-serif;
 }
 
+
+.header {
+    min-height: 0 !important;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
 .description {
-    width: max(50%, 28rem);
-    max-width: 100%;
+    position: static !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
     margin: 0 auto;
-    font-family: 'Satoshi-Variable', Helvetica, sans-serif;
+	font-family: 'Satoshi-Variable', Helvetica, sans-serif;
 }
 
 .description h1, .work h2 {
@@ -241,13 +250,6 @@ h2 {
     box-shadow: none !important;
 }
 
-.header {
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    padding-top: 5rem;
-    padding-bottom: 2rem;
-}
 
 
 /*work section*/
