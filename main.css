@@ -189,15 +189,6 @@ h2 {
 
 /*description blurb */
 
-.work {
-	left: 50%;
-	position: absolute;
-	top: 45%;
-	transform: translate(-50%, -55%);
-    font-family: 'Satoshi-Variable', Helvetica, sans-serif;
-}
-
-
 .header {
     min-height: 0 !important;
     padding-top: 5rem;
