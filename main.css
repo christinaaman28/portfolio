@@ -142,18 +142,17 @@ h2 {
 /*nav stuff*/
 
 .navbar {
-    background: rgba(242, 241, 240, 0.78);
- 	-webkit-backdrop-filter: blur(0.625rem);
- 	backdrop-filter: blur(0.625rem);
-  	border-bottom: 1px solid rgba(38, 38, 38, 0.08);
- 	padding: .5rem 2rem;
+  background: rgba(242, 241, 240, 0.78);
+  -webkit-backdrop-filter: blur(0.625rem);
+  backdrop-filter: blur(0.625rem);
+  border-bottom: 1px solid rgba(38, 38, 38, 0.08);
+  padding: .5rem 2rem;
 }
 .nav-link,
 .navbar-brand {
     color: #262626;
     cursor: pointer;
 }
-
 .navbar .navbar-brand {
   margin: 0;
   padding: 0;
@@ -161,16 +160,12 @@ h2 {
 
 .navbar .navbar-brand .logo {
   display: block;
-  max-height: 50px;
+  max-height: 2.875rem;
   width: auto;
 }
 
-.navbar-toggler {
-    border: none;
-}
-
 .nav-link {
-    margin-right: 1rem !important;
+    margin-right: 1em !important;
 }
 
 .navbar-nav .nav-item:last-child .nav-link {
@@ -180,21 +175,13 @@ h2 {
 .nav-link:hover {
     color: #A44113;
 }
-
 .navbar-collapse {
     justify-content: flex-end;
-     padding: 0;
+   padding: 0;
 }
 
 
 /*description blurb */
-
-.header {
-    min-height: 0 !important;
-    padding-top: 5rem;
-    padding-bottom: 2rem;
-}
-
 .description, .work {
 	left: 50%;
 	position: absolute;
@@ -203,7 +190,6 @@ h2 {
     font-family: 'Satoshi-Variable', Helvetica, sans-serif;
 
 }
-
 .description h1, .work h2 {
     font-size: 2.5rem;
     font-family: 'Satoshi-Variable', Helvetica, sans-serif;
@@ -226,7 +212,6 @@ h2 {
     color:#FFF;
 }
 
-
 .description a.portfolio-button {
     color: #A44113 !important;
     background: transparent !important;
@@ -241,6 +226,11 @@ h2 {
     box-shadow: none !important;
 }
 
+.header {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
 
 
 /*work section*/
@@ -251,17 +241,12 @@ h2 {
 	padding: 4em;
 	position: relative;
 }
-
-.features .row {
-    --bs-gutter-x: 3rem;
-}
-
 .feature-title {
  font-family: 'Satoshi-Bold';
 	color: #A44113;
 	font-size: 1.3rem;
 	font-weight: 459;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .features a {
@@ -481,48 +466,35 @@ h2 {
 
 
 @media (max-width: 575.98px) {
-	  .navbar {
-		  padding: .5rem 4%;
-	  }
-
- 	 .navbar .navbar-brand .logo {
-		 max-height: 2.5rem;
-	  }
-
- 	 .navbar-collapse {
-   		 padding-top: .5rem;
-	  }
-
-	.header {
-    min-height: auto;
-    padding-top: 6rem;
-    padding-bottom: 2rem;
+  .navbar {
+    padding: .5rem 4%;
   }
-	
-	.description {
-    left: auto;
-    top: auto;
-    position: relative;
-    transform: none;
-    width: 100%;
-    padding: 0 15px;
-    text-align: left;
+
+  .navbar .navbar-brand .logo {
+    max-height: 2.5rem;
   }
+
+  .navbar-collapse {
+    padding-top: .5rem;
+  }
+
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
 
     .description h1 {
-        font-size: 2.2rem;
+        font-size: 2em;
     }
 
     .description p {
-        font-size: 1.05rem;
-		line-height: 1.5;
+        font-size: 1.2rem;
     }
 
-	.description > .d-flex {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem !important;
-	}
     .features {
         margin: 0;
     }
