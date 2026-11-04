@@ -189,11 +189,18 @@ h2 {
 
 /*description blurb */
 
-.description, .work {
+.work {
 	left: 50%;
 	position: absolute;
 	top: 45%;
 	transform: translate(-50%, -55%);
+    font-family: 'Satoshi-Variable', Helvetica, sans-serif;
+}
+
+.description {
+    width: max(50%, 28rem);
+    max-width: 100%;
+    margin: 0 auto;
     font-family: 'Satoshi-Variable', Helvetica, sans-serif;
 }
 
@@ -238,8 +245,8 @@ h2 {
     background-size: cover;
     background-position: center;
     position: relative;
-	min-height: 80vh;
     padding-top: 5rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -251,12 +258,17 @@ h2 {
 	padding: 4em;
 	position: relative;
 }
+
+.features .row {
+    --bs-gutter-x: 3rem;
+}
+
 .feature-title {
  font-family: 'Satoshi-Bold';
 	color: #A44113;
 	font-size: 1.3rem;
 	font-weight: 459;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .features a {
