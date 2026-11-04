@@ -195,13 +195,13 @@ h2 {
     padding-bottom: 2rem;
 }
 
-.description {
-    position: static !important;
-    transform: none !important;
-    left: auto !important;
-    top: auto !important;
-    margin: 0 auto;
-	font-family: 'Satoshi-Variable', Helvetica, sans-serif;
+.description, .work {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+    font-family: 'Satoshi-Variable', Helvetica, sans-serif;
+
 }
 
 .description h1, .work h2 {
